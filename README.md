@@ -63,9 +63,9 @@ function onError(e:VolumeEvent):void
 * iOS 8.0 or higher
 
 # Commercial Version
-http://www.myflashlabs.com/
+http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-pro-version/
 
-![Volume Manager Pro ANE](http://www.myflashlabs.com/wp-content/uploads/2015/11/)
+![Volume Manager Pro ANE](http://www.myflashlabs.com/wp-content/uploads/2016/02/product_adobe-air-ane-extension-volume-manager-pro-595x738.jpg)
 
 # Tutorials
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  

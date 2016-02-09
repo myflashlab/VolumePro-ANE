@@ -11,6 +11,9 @@ you may like to see the ANE in action? [Download demo .apk](https://github.com/m
 **NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. in your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
 [Download the ANE](https://github.com/myflashlab/VolumePro-ANE/tree/master/FD/lib)
 
+# Download lite version for FREE
+We are giving away a lite version of this ANE free of charge here: http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-lite-version/
+
 # Air Usage
 ```actionscript
 import com.myflashlab.air.extensions.volume.Volume;

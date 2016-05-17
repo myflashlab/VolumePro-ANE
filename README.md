@@ -5,6 +5,9 @@ This native extension answers the most two important questions that an Air devel
 - What would you do if you want to make sure your game's sound effects are muted when the user's device goes silenced?
 - What would you do when your game begins but a background music from device's media player or another app is already playing?
 
+# asdoc
+[find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/package-detail.html)
+
 # Demo .apk
 you may like to see the ANE in action? [Download demo .apk](https://github.com/myflashlab/VolumePro-ANE/tree/master/FD/dist)
 

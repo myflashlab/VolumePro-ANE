@@ -88,6 +88,7 @@ http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-pro
 # Changelog
 *Nov 08, 2016 - V1.1.0*
 * Optimized for Android manual permissions if you are targeting AIR SDK 24+
+* From now on, this ANE will depend on androidSupport.ane and overrideAir.ane on the Android side
 
 *Feb 08, 2016 - V1.0.0*
 * beginning of the journey!

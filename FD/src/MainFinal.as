@@ -38,7 +38,7 @@ package
 	
 	/**
 	 * ...
-	 * @author Hadi Tavakoli
+	 * @author Hadi Tavakoli - 2/9/2013 12:06 PM
 	 */
 	public class MainFinal extends Sprite 
 	{

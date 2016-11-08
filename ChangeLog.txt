@@ -1,4 +1,7 @@
 Volume Manager Pro Adobe Air Native Extension
 
+*Nov 08, 2016 - V1.1.0*
+* Optimized for Android manual permissions if you are targeting AIR SDK 24+
+
 *Feb 08, 2016 - V1.0.0*
 * beginning of the journey!

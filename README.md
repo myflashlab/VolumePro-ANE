@@ -65,7 +65,7 @@ function onError(e:VolumeEvent):void
 	
 	<extensionID>com.myflashlab.air.extensions.volume</extensionID>
 	
-	<!-- The following dependency ANEs are only required when compiling for Android -->
+	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
 	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
 	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	

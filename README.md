@@ -1,24 +1,23 @@
-# Volume Manager Pro ANE V1.1.1 (Android+iOS)
-This air native extension is a must have ANE for you in every game you are developing. It will not only let you control the native music stream volume, you can listen to the volume changes. Moreover, you can listen to know when the device goes to silenced mode and when does it retuen. And on top of that, you are able to stop any background music which might be playing in background.
+# Volume Manager Pro ANE V2.0.0 (Android+iOS)
+This air native extension is a must have ANE for you in every game you are developing. It will not only let you control the native music stream volume, you can listen to the volume changes. Moreover, you can listen to know when the device goes to silenced mode and when does it return. And on top of that, you are able to stop any background music which might be playing in background.
 
 This native extension answers the most two important questions that an Air developer could had solved before!
 - What would you do if you want to make sure your game's sound effects are muted when the user's device goes silenced?
 - What would you do when your game begins but a background music from device's media player or another app is already playing?
 
+Since V2+ of this ANE, it also supports Native Sound objects which allows you to play sounds in your AIR app with almost no latency. Many of you are experiencing a nerve-racking challenge when dealing with sounds in AIR apps/games. This ANE is here to help you manage your sounds gracefully. 
+
 # asdoc
 [find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/package-detail.html)
 
 # Demo .apk
-you may like to see the ANE in action? [Download demo .apk](https://github.com/myflashlab/VolumePro-ANE/tree/master/FD/dist)
+you may like to see the ANE in action? [Download demo .apk](https://github.com/myflashlab/VolumePro-ANE/tree/master/AIR/out)
 
-**NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. in your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
-[Download the ANE](https://github.com/myflashlab/VolumePro-ANE/tree/master/FD/lib)
-
-# Download lite version for FREE
-We are giving away a lite version of this ANE free of charge here: http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-lite-version/
+**NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. In your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
+[Download the ANE](https://github.com/myflashlab/VolumePro-ANE/tree/master/AIR/lib)
 
 # Air Usage
-For the complete AS3 code usage, see the [demo project here](https://github.com/myflashlab/VolumePro-ANE/blob/master/FD/src/MainFinal.as).
+For the complete AS3 code usage, see the [demo project here](https://github.com/myflashlab/VolumePro-ANE/blob/master/AIR/src/Main.as).
 
 ```actionscript
 import com.myflashlab.air.extensions.volume.Volume;
@@ -58,6 +57,45 @@ function onError(e:VolumeEvent):void
 	trace("onError = " + e.param);
 }
 ```
+# Air Usage - NativeSound
+```actionscript
+import com.myflashlab.air.extensions.volume.Volume;
+import com.myflashlab.air.extensions.volume.VolumeEvent;
+import com.myflashlab.air.extensions.volume.NativeSound;
+
+var _nativeSound1:NativeSound;
+var _nativeSound2:NativeSound;
+
+Volume.initNativeSoundObject()
+Volume.service.addEventListener(VolumeEvent.SOUND_LOADED, onSoundLoaded);
+
+// preload your sound files. Sound files must be less than 30 seconds.
+// Preferred file format for iOS is .caf (You can convert mp3 files to .caf very easily. just Google it.
+Volume.getNativeSoundObject(File.applicationDirectory.resolvePath("sound01.mp3"));
+Volume.getNativeSoundObject(File.applicationDirectory.resolvePath("sound02.mp3"));
+
+function onSoundLoaded(e:VolumeEvent):void
+{
+	// save a reference to sound objects for later use.
+		
+	switch(e.nativeSound.file)
+	{
+		case "sound01.mp3":
+				
+			_nativeSound1 = e.nativeSound;
+			_nativeSound1.play();
+			
+			break;
+		case "sound02.mp3":
+			
+			_nativeSound2 = e.nativeSound;
+			_nativeSound2.play();
+			
+			break;
+	}
+}
+
+```
 
 # AIR .xml manifest
 ```xml
@@ -74,8 +112,9 @@ function onError(e:VolumeEvent):void
 
 # Requirements
 * This ANE is dependent on **androidSupport.ane** and **overrideAir.ane**. Download them from [here](https://github.com/myflashlab/common-dependencies-ANE).
-* Android SDK 15 or higher
-* iOS 8.0 or higher
+* AIR SDK 25+
+* Android SDK 15+
+* iOS 8.0+
 
 # Commercial Version
 http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-pro-version/
@@ -86,6 +125,10 @@ http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-pro
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*May 31, 2017 - V2.0.0*
+* Introduced [NativeSound](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/NativeSound.html) Which allows you play Sound effects in your app with almost no latency. To know how to use it, read [this document](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/Volume.html#getNativeSoundObject()) or check out the sample project available on Github.
+* Min AIR SDK is 25
+
 *Mar 31, 2017 - V1.1.1*
 * Updated with the latest overrideAir. Even if you are building for iOS only, you will still need this dependency
 * Min iOS version to support this ANE is 8.0

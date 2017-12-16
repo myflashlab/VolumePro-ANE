@@ -1,4 +1,4 @@
-# Volume Manager Pro ANE V2.0.0 (Android+iOS)
+# Volume Manager Pro ANE V2.0.1 (Android+iOS)
 This air native extension is a must have ANE for you in every game you are developing. It will not only let you control the native music stream volume, you can listen to the volume changes. Moreover, you can listen to know when the device goes to silenced mode and when does it return. And on top of that, you are able to stop any background music which might be playing in background.
 
 This native extension answers the most two important questions that an Air developer could had solved before!
@@ -10,11 +10,7 @@ Since V2+ of this ANE, it also supports Native Sound objects which allows you to
 # asdoc
 [find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/package-detail.html)
 
-# Demo .apk
-you may like to see the ANE in action? [Download demo .apk](https://github.com/myflashlab/VolumePro-ANE/tree/master/AIR/out)
-
-**NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. In your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
-[Download the ANE](https://github.com/myflashlab/VolumePro-ANE/tree/master/AIR/lib)
+[Download demo ANE](https://github.com/myflashlab/VolumePro-ANE/tree/master/AIR/lib)
 
 # Air Usage
 For the complete AS3 code usage, see the [demo project here](https://github.com/myflashlab/VolumePro-ANE/blob/master/AIR/src/Main.as).
@@ -125,6 +121,9 @@ http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-pro
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*Dec 15, 2017 - V2.0.1*
+* optimized for [ANE-LAB sofwate](https://github.com/myflashlab/ANE-LAB).
+
 *May 31, 2017 - V2.0.0*
 * Introduced [NativeSound](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/NativeSound.html) Which allows you play Sound effects in your app with almost no latency. To know how to use it, read [this document](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/Volume.html#getNativeSoundObject()) or check out the sample project available on Github.
 * Min AIR SDK is 25

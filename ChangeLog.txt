@@ -1,5 +1,8 @@
 Volume Manager Pro Adobe Air Native Extension
 
+*Dec 15, 2017 - V2.0.1*
+* optimized for [ANE-LAB sofwate](https://github.com/myflashlab/ANE-LAB).
+
 *May 31, 2017 - V2.0.0*
 * Introduced [NativeSound](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/NativeSound.html) Which allows you play Sound effects in your app with almost no latency. To know how to use it, read [this document](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/volume/Volume.html#getNativeSoundObject()) or check out the sample project available on Github.
 * Min AIR SDK is 25

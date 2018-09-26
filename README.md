@@ -1,4 +1,4 @@
-# Volume Manager Pro ANE V2.0.1 (Android+iOS)
+# Volume Manager Pro ANE V2.0.2 (Android+iOS)
 This air native extension is a must have ANE for you in every game you are developing. It will not only let you control the native music stream volume, you can listen to the volume changes. Moreover, you can listen to know when the device goes to silenced mode and when does it return. And on top of that, you are able to stop any background music which might be playing in background.
 
 This native extension answers the most two important questions that an Air developer could had solved before!
@@ -16,8 +16,7 @@ Since V2+ of this ANE, it also supports Native Sound objects which allows you to
 For the complete AS3 code usage, see the [demo project here](https://github.com/myflashlab/VolumePro-ANE/blob/master/AIR/src/Main.as).
 
 ```actionscript
-import com.myflashlab.air.extensions.volume.Volume;
-import com.myflashlab.air.extensions.volume.VolumeEvent;
+import com.myflashlab.air.extensions.volume.*;
 
 Volume.init();
 
@@ -55,9 +54,7 @@ function onError(e:VolumeEvent):void
 ```
 # Air Usage - NativeSound
 ```actionscript
-import com.myflashlab.air.extensions.volume.Volume;
-import com.myflashlab.air.extensions.volume.VolumeEvent;
-import com.myflashlab.air.extensions.volume.NativeSound;
+import com.myflashlab.air.extensions.volume.*;
 
 var _nativeSound1:NativeSound;
 var _nativeSound2:NativeSound;
@@ -100,27 +97,28 @@ function onSoundLoaded(e:VolumeEvent):void
 	<extensionID>com.myflashlab.air.extensions.volume</extensionID>
 	
 	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
 	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	
 </extensions>
 ```
 
 # Requirements
-* This ANE is dependent on **androidSupport.ane** and **overrideAir.ane**. Download them from [here](https://github.com/myflashlab/common-dependencies-ANE).
-* AIR SDK 25+
+* AIR SDK 30+
 * Android SDK 15+
 * iOS 8.0+
 
 # Commercial Version
 http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-pro-version/
 
-![Volume Manager Pro ANE](http://www.myflashlabs.com/wp-content/uploads/2016/02/product_adobe-air-ane-extension-volume-manager-pro-595x738.jpg)
+![Volume Manager Pro ANE](https://www.myflashlabs.com/wp-content/uploads/2016/02/product_adobe-air-ane-extension-volume-manager-pro-595x738.jpg)
 
 # Tutorials
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*Sep 24, 2018 - V2.0.2*
+* Removed androidSupport dependency
+
 *Dec 15, 2017 - V2.0.1*
 * optimized for [ANE-LAB sofwate](https://github.com/myflashlab/ANE-LAB).
 

@@ -1,5 +1,8 @@
 Volume Manager Pro Adobe Air Native Extension
 
+*Sep 24, 2018 - V2.0.2*
+* Removed androidSupport dependency
+
 *Dec 15, 2017 - V2.0.1*
 * optimized for [ANE-LAB sofwate](https://github.com/myflashlab/ANE-LAB).
 

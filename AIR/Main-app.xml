@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/25.0">
+<application xmlns="http://ns.adobe.com/air/application/30.0">
     <id>com.doitflash.exVolume</id>
-    <versionNumber>2.0.1</versionNumber>
+    <versionNumber>2.0.2</versionNumber>
     <supportedProfiles>mobileDevice</supportedProfiles>
     <filename>exVolume</filename>
     <name>Volume Manager</name>
@@ -9,9 +9,7 @@
         <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
 
 		<uses-permission android:name="android.permission.INTERNET" />
-
-		<!--The new Permission thing on Android works ONLY if you are targetting Android SDK 23 or higher-->
-		<uses-sdk android:targetSdkVersion="23"/>
+        <uses-sdk android:targetSdkVersion="26"/>
 
 		<application>
 
@@ -71,7 +69,6 @@
         <extensionID>com.myflashlab.air.extensions.volume</extensionID>
 
         <!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
-        <extensionID>com.myflashlab.air.extensions.dependency.androidSupport</extensionID>
         <extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 
     </extensions>

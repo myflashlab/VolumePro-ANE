@@ -345,7 +345,7 @@ public class Main extends Sprite
 		/*
 
 		 If you are seeing AIR_SDK_BUG_ABANDON_FOCUS it means:
-		 unfortunaitly there is a bug in iOS Adobe Air SDK which cannot abandon audio focus once obtained.
+		 unfortunately there is a bug in iOS Adobe Air SDK which cannot abandon audio focus once obtained.
 
 		 If you are seeing AIR_SDK_BUG_REQUEST_FOCUS it means:
 		 Again this error is related to the former one above! but it happens only when you have played a sound

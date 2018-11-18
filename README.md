@@ -1,4 +1,4 @@
-# Volume Manager Pro ANE V2.0.2 (Android+iOS)
+# Volume Manager Pro ANE V2.0.5 (Android+iOS)
 This air native extension is a must have ANE for you in every game you are developing. It will not only let you control the native music stream volume, you can listen to the volume changes. Moreover, you can listen to know when the device goes to silenced mode and when does it return. And on top of that, you are able to stop any background music which might be playing in background.
 
 This native extension answers the most two important questions that an Air developer could had solved before!
@@ -116,6 +116,10 @@ http://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-pro
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
 
 # Changelog
+*Nov 18, 2018 - V2.0.5*
+* Works with OverrideAir ANE V5.6.1 or higher
+* Works with ANELAB V1.1.26 or higher
+
 *Sep 24, 2018 - V2.0.2*
 * Removed androidSupport dependency
 

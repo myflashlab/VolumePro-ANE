@@ -1,5 +1,10 @@
 Volume Manager Pro Adobe Air Native Extension
 
+*Aug 4, 2019 - V2.0.51*
+* Added Android 64-bit support
+* Supports iOS 10+
+* removed **.os** property, use ```OverrideAir.os``` instead.
+
 *Nov 18, 2018 - V2.0.5*
 * Works with OverrideAir ANE V5.6.1 or higher
 * Works with ANELAB V1.1.26 or higher

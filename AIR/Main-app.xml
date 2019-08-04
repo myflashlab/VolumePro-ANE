@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/31.0">
+<application xmlns="http://ns.adobe.com/air/application/32.0">
     <id>com.doitflash.exVolume</id>
-    <versionNumber>2.0.5</versionNumber>
+    <versionNumber>2.0.51</versionNumber>
     <supportedProfiles>mobileDevice</supportedProfiles>
     <filename>exVolume</filename>
     <name>Volume Manager</name>
@@ -9,7 +9,7 @@
         <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
 
 		<uses-permission android:name="android.permission.INTERNET" />
-        <uses-sdk android:targetSdkVersion="26"/>
+        <uses-sdk android:targetSdkVersion="28"/>
 
 		<application>
 
@@ -28,6 +28,9 @@
 		</application>
 </manifest>]]></manifestAdditions>
     </android>
+    <iPhone>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
     <initialWindow>
         <title>exVolume</title>
         <content>ex.swf</content>

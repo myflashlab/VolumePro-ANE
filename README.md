@@ -102,7 +102,7 @@ function onSoundLoaded(e:VolumeEvent):void
 # Requirements
 * AIR SDK 30+
 * Android SDK 15+
-* iOS 8.0+
+* iOS 10.0+
 
 # Commercial Version
 https://www.myflashlabs.com/product/volume-control-adobe-air-native-extension-pro-version/

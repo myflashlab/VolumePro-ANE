@@ -1,4 +1,8 @@
-Volume Manager Pro Adobe Air Native Extension
+#  Volume Manager Pro Adobe Air Native Extension
+
+*Jul 31, 2020 - v3.0.0*
+- Upgrade dependencies to the latest versions.
+- Fixed some minor issues and refactor native codes.
 
 *Aug 4, 2019 - V2.0.51*
 * Added Android 64-bit support
